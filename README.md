@@ -21,6 +21,8 @@ Install dependencies
 Download the object detection model and add the correct path to object_detection.py
 `wget  https://github.com/ARM-software/ML-zoo/raw/master/models/object_detection/ssd_mobilenet_v1/tflite_uint8/ssd_mobilenet_v1.tflite`
 
+Verify the camera index on the device and update the CAMERA_INDEX variable accordingly. For instance you can connect a usb camera and execute `ls /dev/video*` and pick the latest device created by date.
+
 Run the script
 `python object_detection.py`
 ```
